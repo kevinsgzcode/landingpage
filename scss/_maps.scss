@@ -24,3 +24,11 @@ $section-spacing: (
   features-desktop: 3rem,
   features-mobile: 3rem,
 );
+
+$section-spacing: map-merge(
+  $section-spacing,
+  (
+    technology-desktop: 6rem,
+    technology-mobile: 3.5rem,
+  )
+);
