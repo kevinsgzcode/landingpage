@@ -1,0 +1,116 @@
+.tools-section {
+  padding: map-get($tools-layout, padding-desktop) 0;
+}
+
+@media (max-width: 991px) {
+  .tools-section {
+    padding: map-get($tools-layout, padding-mobile) 0;
+    min-height: auto;
+  }
+}
+
+.tools-badge {
+  background-color: #f59e0b;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+}
+
+.tools-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+
+  .highlight {
+    color: $primary;
+  }
+}
+
+.tools-text {
+  max-width: 480px;
+  color: $gray-600;
+  font-size: 1.5rem;
+}
+
+//bars
+.tools-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.progress-item span {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.35rem;
+  font-weight: 500;
+}
+
+.progress {
+  height: 6px;
+  background-color: #e9ecef;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: $primary;
+  height: 100%;
+  border-radius: 999px;
+}
+
+//img
+.tools-media {
+  position: relative;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  cursor: pointer;
+
+  img {
+    transition: transform 0.4s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
+
+.play-button {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba($white, 0.9);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.tools-media:hover .play-button {
+  transform: scale(1.1);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+
+  small {
+    font-size: 1rem;
+    color: $gray-500;
+  }
+}

@@ -12126,8 +12126,8 @@ body {
 }
 .trusted-by span {
   display: block;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
 }
 
 .trusted-logos {
@@ -12154,6 +12154,113 @@ body {
     grid-template-columns: repeat(2, auto);
     gap: 2rem 2.5rem;
   }
+}
+.tools-section {
+  padding: 1.5rem 0;
+}
+
+@media (max-width: 991px) {
+  .tools-section {
+    padding: 3rem 0;
+    min-height: auto;
+  }
+}
+.tools-badge {
+  background-color: #f59e0b;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+}
+
+.tools-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+.tools-title .highlight {
+  color: #1e7bff;
+}
+
+.tools-text {
+  max-width: 480px;
+  color: #6c757d;
+  font-size: 1.5rem;
+}
+
+.tools-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.progress-item span {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.35rem;
+  font-weight: 500;
+}
+
+.progress {
+  height: 6px;
+  background-color: #e9ecef;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: #1e7bff;
+  height: 100%;
+  border-radius: 999px;
+}
+
+.tools-media {
+  position: relative;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.tools-media img {
+  transition: transform 0.4s ease;
+}
+.tools-media:hover img {
+  transform: scale(1.05);
+}
+
+.play-button {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tools-media:hover .play-button {
+  transform: scale(1.1);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+}
+.progress-label small, .progress-label .small {
+  font-size: 1rem;
+  color: #adb5bd;
 }
 
 /*# sourceMappingURL=main.css.map */
