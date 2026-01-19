@@ -1,0 +1,108 @@
+//Card
+.card-ui {
+  background: #fff;
+  color: #212529;
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.card-ui-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1rem;
+  font-weight: 500;
+  color: #495057;
+
+  button {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+  }
+}
+
+//Credit card
+.credit-card {
+  background: linear-gradient(135deg, #1f1b4f, #3a2f7d);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: #fff;
+  font-family: monospace;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-number {
+  font-size: 1.05rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  gap: 1.5rem;
+
+  small {
+    font-size: 0.65rem;
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+  }
+
+  div {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 0.75rem;
+  font-size: 1rem;
+  padding-bottom: 0.75rem;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  strong {
+    display: block;
+    font-weight: 600;
+  }
+
+  small {
+    display: block;
+    font-size: 1rem;
+    opacity: 0.6;
+  }
+
+  span {
+    font-weight: 500;
+    white-space: nowrap;
+  }
+}
+
+.view-all {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

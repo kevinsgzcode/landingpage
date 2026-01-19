@@ -1,0 +1,13 @@
+@import "variables";
+@import "maps";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "base";
+@import "layout";
+
+//Custom styles
+@import "components/navbar";
+@import "components/hero";
+@import "components/card";
+@import "components/trusted-by";

@@ -1,0 +1,42 @@
+// Trusted by
+.trusted-by {
+  text-align: center;
+  opacity: 1;
+  color: $gray-600;
+
+  span {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+.trusted-logos {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.trusted-logos img {
+  margin: 0 1rem;
+  opacity: 0.8;
+  //black logos
+  filter: brightness(0) saturate(100%);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 575px) {
+  .trusted-logos {
+    grid-template-columns: repeat(2, auto);
+    gap: 2rem 2.5rem;
+  }
+}

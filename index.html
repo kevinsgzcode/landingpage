@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odoo Landing</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!--Nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container position-relative">
+        <a class="navbar-brand mx-auto mx-lg-0" href="#">
+          <img src="assets/images/odoo-white.svg" alt="Odoo" height="28" />
+        </a>
+        <!-- mobile/hamburger -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="toggler-icon"></span>
+        </button>
+
+        <!-- items -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <!-- Centered navigation -->
+          <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">App</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Docs</a>
+            </li>
+          </ul>
+
+          <!-- Right-->
+          <div class="d-flex align-items-center">
+            <a class="btn btn-primary btn-sm text-white" href="#">Buy now</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Hero section-->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-start">
+          <!-- Left content -->
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="hero-title">
+              Development done <span class="highlight">right</span>
+            </h1>
+
+            <p class="hero-text mt-3">
+              Build a beautiful, modern website with flexible components built
+              from scratch.
+            </p>
+
+            <a
+              href="#"
+              class="btn btn-primary btn-lg mt-4 hero-cta-btn text-white"
+            >
+              Get started +
+            </a>
+          </div>
+
+          <!-- Right-->
+          <div
+            class="col-lg-6 d-flex justify-content-center justify-content-lg-end"
+          >
+            <div class="card-ui hero-card">
+              <!-- Header -->
+              <div
+                class="card-ui-header d-flex justify-content-between align-items-center"
+              >
+                <span>Manage cards</span>
+                <button class="btn btn-sm btn-outline-secondary">
+                  Add new
+                </button>
+              </div>
+
+              <!-- Credit card -->
+              <div class="credit-card">
+                <div class="d-flex justify-content-between align-items-center">
+                  <img
+                    src="assets/images/mastercard.svg"
+                    alt="Mastercard"
+                    height="28"
+                  />
+                  <span class="badge bg-success">Active</span>
+                </div>
+
+                <div class="card-number mt-3">
+                  4358&nbsp;&nbsp;7421&nbsp;&nbsp;9256&nbsp;&nbsp;6682
+                </div>
+
+                <div class="card-meta mt-3">
+                  <div>
+                    <small>CARD NUMBER</small>
+                    <div>John Snow</div>
+                  </div>
+                  <div>
+                    <small>EXPIRY DATE</small>
+                    <div>11/23</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Transactions -->
+              <div class="transactions mt-3">
+                <div class="transaction">
+                  <div>
+                    <strong>Starbucks</strong>
+                    <small>Pending - San Francisco, United States</small>
+                  </div>
+                  <span>$5,50 USD</span>
+                </div>
+
+                <div class="transaction">
+                  <div>
+                    <strong>Nike Sports</strong>
+                    <small>Pending - Lisbon, Portugal</small>
+                  </div>
+                  <span>$129,00 USD</span>
+                </div>
+
+                <a href="#" class="view-all">View all</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trusted by -->
+        <div class="trusted-by mt-5">
+          <span>Trusted by top companies</span>
+          <div class="trusted-logos">
+            <img
+              src="assets/images/google-white.svg"
+              alt="Google"
+              height="32"
+            />
+            <img
+              src="assets/images/spotify-white.svg"
+              alt="Spotify"
+              height="32"
+            />
+            <img
+              src="assets/images/airbnb-white.svg"
+              alt="Airbnb"
+              height="32"
+            />
+            <img
+              src="assets/images/paypal-white.svg"
+              alt="Paypal"
+              height="32"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
