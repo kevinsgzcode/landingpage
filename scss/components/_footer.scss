@@ -1,0 +1,108 @@
+/* =========================
+   Footer
+========================= */
+
+.footer {
+  background: linear-gradient(180deg, #0e1033, #0b0d26);
+  color: rgba(255, 255, 255, 0.85);
+  padding: map-get($section-spacing, footer-desktop) 0;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    padding: map-get($section-spacing, footer-mobile) 0;
+  }
+}
+
+/* =========================
+   CTA
+========================= */
+
+.footer-cta-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer-cta-text {
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 0;
+}
+
+/* =========================
+   Divider
+========================= */
+
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* =========================
+   Brand
+========================= */
+
+.footer-text {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 360px;
+}
+
+.footer-social a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+/* =========================
+   Links
+========================= */
+
+.footer-heading {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-bottom: 0.4rem;
+  }
+
+  a {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+/* =========================
+   Bottom bar
+========================= */
+
+.footer-bottom small {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+.footer-legal a {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+
+  &:hover {
+    color: #fff;
+  }
+}
