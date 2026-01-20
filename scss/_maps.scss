@@ -48,3 +48,11 @@ $section-spacing: map-merge(
     awards-mobile: 3.5rem,
   )
 );
+
+$section-spacing: map-merge(
+  $section-spacing,
+  (
+    questions-desktop: 6rem,
+    questions-mobile: 4rem,
+  )
+);

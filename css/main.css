@@ -12773,4 +12773,93 @@ body {
   border-radius: 999px;
 }
 
+/* =========================
+   Questions section
+========================= */
+.questions-section {
+  padding: 6rem 0;
+  background-color: #fff;
+}
+
+@media (max-width: 991px) {
+  .questions-section {
+    padding: 4rem 0;
+  }
+}
+/* =========================
+   Titles
+========================= */
+.questions-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.questions-subtitle {
+  color: #6c757d;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* =========================
+   Accordion styling
+========================= */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.accordion-item {
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.accordion-button {
+  font-weight: 500;
+  background-color: #fff;
+  color: #212529;
+  padding: 1.25rem 1.5rem;
+  position: relative;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button::after {
+  display: none;
+}
+
+/* Plus icon */
+.accordion-icon {
+  margin-left: auto;
+  font-size: 1.25rem;
+  transition: transform 0.25s ease;
+}
+
+/* Active state */
+.accordion-button:not(.collapsed) {
+  background-color: #1e7bff;
+  color: #fff;
+}
+.accordion-button:not(.collapsed) .accordion-icon {
+  transform: rotate(45deg);
+}
+
+/* Body */
+.accordion-body {
+  background-color: #fff;
+  color: #6c757d;
+  padding: 1.25rem 1.5rem;
+}
+
+/* =========================
+   CTA
+========================= */
+.questions-cta-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
 /*# sourceMappingURL=main.css.map */
