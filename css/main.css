@@ -12565,5 +12565,117 @@ body {
     width: 100%;
   }
 }
+.download-cta {
+  background-color: #1e7bff;
+  color: #fff;
+  width: 100%;
+}
+
+.download-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .download-inner {
+    padding: 4rem 1.25rem;
+  }
+}
+.download-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  opacity: 0.9;
+  margin-bottom: 0.75rem;
+}
+
+.download-title {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.download-text {
+  max-width: 560px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.download-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.store-btn {
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.store-btn.apple,
+.store-btn.google {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: #fff;
+  background-color: transparent;
+}
+
+.store-btn:hover {
+  background-color: #fff;
+  color: #1e7bff;
+}
+
+.download-cta {
+  clip-path: ellipse(140% 100% at 50% 100%);
+}
+
+.download-media {
+  position: relative;
+  margin-top: 2.5rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  max-width: 720px;
+  width: 100%;
+  cursor: pointer;
+}
+.download-media img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.download-media:hover img {
+  transform: scale(1.05);
+}
+
+.play-button {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tools-media:hover .play-button {
+  transform: scale(1.1);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
 
 /*# sourceMappingURL=main.css.map */
