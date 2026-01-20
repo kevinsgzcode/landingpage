@@ -3,8 +3,6 @@
   color: $white;
   padding: map-get($hero-layout, padding-desktop) 0;
   min-height: 85vh;
-  display: flex;
-  align-items: center;
 }
 
 @media (max-width: 991px) {
@@ -12,16 +10,17 @@
     padding: map-get($hero-layout, padding-mobile) 0;
     min-height: auto;
   }
-  .hero-card {
-    transform: none;
-    margin-top: 2rem;
-  }
 }
 
 .hero-card {
-  transform: translateY(-50px);
-  max-width: 460px;
-  width: 100%;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  }
 }
 
 //Hero content
