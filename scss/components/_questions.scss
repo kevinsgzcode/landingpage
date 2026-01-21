@@ -4,7 +4,6 @@
 
 .questions-section {
   padding: map-get($section-spacing, questions-desktop) 0;
-  background-color: #fff;
 }
 
 @media (max-width: 991px) {
@@ -20,6 +19,7 @@
 .questions-title {
   font-size: 2rem;
   font-weight: 700;
+  color: $primary;
 }
 
 .questions-subtitle {

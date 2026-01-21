@@ -12878,8 +12878,7 @@ body {
    Questions section
 ========================= */
 .questions-section {
-  padding: 6rem 0;
-  background-color: #fff;
+  padding: 3rem 0;
 }
 
 @media (max-width: 991px) {
@@ -12893,6 +12892,7 @@ body {
 .questions-title {
   font-size: 2rem;
   font-weight: 700;
+  color: #1e7bff;
 }
 
 .questions-subtitle {
