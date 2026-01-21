@@ -5,6 +5,25 @@
 @media (max-width: 991px) {
   .features-section {
     padding: map-get($section-spacing, features-mobile) 0;
+    text-align: center;
+  }
+  .features-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1.5rem auto 0 auto;
+    padding: 0;
+  }
+  .features-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-align: left;
+  }
+  .features-media {
+    margin-top: 2rem;
   }
 }
 
@@ -60,7 +79,7 @@
 
 .features-media {
   position: relative;
-  width: 360px;
+  max-width: 300px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   overflow: hidden;
