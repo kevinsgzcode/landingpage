@@ -15,9 +15,10 @@ $hero-layout: (
 );
 
 $tools-layout: (
-  padding-desktop: 1.5rem,
-  padding-mobile: 3rem,
+  padding-desktop: 3rem,
+  padding-mobile: 2.5rem,
   content-gap: 1.5rem,
+  media-max-width: 520px,
 );
 
 $section-spacing: (
