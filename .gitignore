@@ -2,9 +2,9 @@
 node_modules/
 
 # Build artifacts
-css/*.map
+assets/css/*.map
 
-# OS / editor junk
+#editor junk
 .DS_Store
 Thumbs.db
 
