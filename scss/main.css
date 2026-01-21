@@ -12298,13 +12298,12 @@ body {
 
 .tools-badge {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   background-color: #ffc107;
   color: #fff;
-  padding: 0.25rem 0.5rem;
+  padding: 0.35rem 0.75rem;
   border-radius: 999px;
-  margin-bottom: 0.75rem;
 }
 
 .tools-title {
@@ -12421,8 +12420,8 @@ body {
 }
 .features-badge {
   display: inline-block;
-  background-color: rgba(25, 135, 84, 0.15);
-  color: #198754;
+  background-color: #198754;
+  color: #fff;
   font-size: 0.7rem;
   font-weight: 600;
   padding: 0.35rem 0.75rem;
