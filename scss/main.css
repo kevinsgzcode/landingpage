@@ -12865,7 +12865,6 @@ body {
 ========================= */
 .awards-section {
   padding: 5rem 0;
-  background-color: #fff;
 }
 
 @media (max-width: 991px) {
@@ -12873,6 +12872,25 @@ body {
     padding: 3.5rem 0;
   }
 }
+/* =========================
+   Slider base
+========================= */
+.awards-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.awards-track {
+  display: flex;
+  gap: 1.5rem;
+  width: -moz-max-content;
+  width: max-content;
+  animation: awards-scroll 40s linear infinite;
+}
+.awards-track:hover {
+  animation-play-state: paused;
+}
+
 /* =========================
    Title
 ========================= */
@@ -12888,20 +12906,15 @@ body {
 }
 
 /* =========================
-   Cards row
-========================= */
-.awards-row {
-  padding-bottom: 1rem;
-}
-
-/* =========================
    Award card
 ========================= */
 .award-card {
+  width: 260px;
   background: #fff;
   border-radius: 1rem;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem;
   text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.04);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   display: flex;
@@ -12944,6 +12957,17 @@ body {
 }
 
 /* =========================
+   Infinite animation
+========================= */
+@keyframes awards-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* =========================
    Mobile scroll polish
 ========================= */
 .awards-row::-webkit-scrollbar {
@@ -12953,6 +12977,27 @@ body {
 .awards-row::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.15);
   border-radius: 999px;
+}
+
+.awards-slider::before,
+.awards-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.awards-slider::before {
+  left: 0;
+  background: linear-gradient(to right, #fff, transparent);
+}
+
+.awards-slider::after {
+  right: 0;
+  background: linear-gradient(to left, #fff, transparent);
 }
 
 /* =========================
