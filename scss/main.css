@@ -12060,14 +12060,21 @@ body {
     margin-top: 1rem;
     border-radius: 1rem;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    text-align: right;
   }
   .navbar-nav {
+    align-items: flex-end;
     gap: 1.25rem;
+  }
+  .navbar-collapse > .d-flex {
+    justify-content: flex-end;
+    margin-top: 1.25rem;
   }
   .nav-link {
     font-size: 1.1rem;
     opacity: 0.7;
     color: #212529;
+    padding: 0;
   }
   .nav-link.active {
     opacity: 1;
@@ -12864,7 +12871,7 @@ body {
    Awards section
 ========================= */
 .awards-section {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 @media (max-width: 991px) {
@@ -13095,7 +13102,7 @@ body {
 .footer {
   background: linear-gradient(180deg, #0e1033, #0b0d26);
   color: rgba(255, 255, 255, 0.85);
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 @media (max-width: 991px) {
