@@ -1,6 +1,4 @@
-/* =========================
-   Awards section
-========================= */
+//Awards section
 
 .awards-section {
   padding: map-get($section-spacing, awards-desktop) 0;
@@ -11,9 +9,8 @@
     padding: map-get($section-spacing, awards-mobile) 0;
   }
 }
-/* =========================
-   Slider base
-========================= */
+
+//Slider base
 
 .awards-slider {
   position: relative;
@@ -31,9 +28,7 @@
   }
 }
 
-/* =========================
-   Title
-========================= */
+//Title
 
 .awards-title {
   max-width: 620px;
@@ -47,9 +42,7 @@
   }
 }
 
-/* =========================
-   Award card
-========================= */
+//Award card
 
 .award-card {
   width: 260px;
@@ -75,15 +68,14 @@
   }
 }
 
-/* =========================
-   Card content
-========================= */
+//Card content
 
 .award-logo {
   height: 32px;
   margin-bottom: 0.5rem;
 }
 
+//stars color
 .award-rating {
   color: #f4c150;
   font-size: 0.9rem;
@@ -106,9 +98,7 @@
   }
 }
 
-/* =========================
-   Infinite animation
-========================= */
+//Infinite animation
 
 @keyframes awards-scroll {
   0% {
@@ -119,9 +109,7 @@
   }
 }
 
-/* =========================
-   Mobile scroll polish
-========================= */
+//Mobile scroll polish
 
 .awards-row::-webkit-scrollbar {
   height: 6px;

@@ -2,6 +2,7 @@
   padding: map-get($section-spacing, features-desktop) 0;
 }
 
+//mobile section
 @media (max-width: 991px) {
   .features-section {
     padding: map-get($section-spacing, features-mobile) 0;
@@ -26,6 +27,8 @@
     margin-top: 2rem;
   }
 }
+
+//features content
 
 .features-badge {
   display: inline-block;

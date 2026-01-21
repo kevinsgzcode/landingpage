@@ -11979,10 +11979,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  padding-top: 80px;
-}
-
 .navbar {
   background-color: #fff;
 }
@@ -12506,9 +12502,6 @@ body {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
 }
 
-/* =========================
-   Technology section
-========================= */
 .technology-section {
   padding: 6rem 0;
 }
@@ -12519,9 +12512,6 @@ body {
     text-align: center;
   }
 }
-/* =========================
-   Text content
-========================= */
 .technology-badge {
   display: inline-block;
   background-color: #1e7bff;
@@ -12563,9 +12553,6 @@ body {
   transform: scale(1.08);
 }
 
-/* =========================
-   Cards – BASE
-========================= */
 .tech-card {
   background: #fff;
   border-radius: 1rem;
@@ -12577,9 +12564,6 @@ body {
   text-align: center;
 }
 
-/* =========================
-   Desktop layout
-========================= */
 @media (min-width: 992px) {
   .technology-section .row {
     align-items: center;
@@ -12612,9 +12596,6 @@ body {
     grid-row: 2;
   }
 }
-/* =========================
-   Mobile layout (horizontal scroll)
-========================= */
 @media (max-width: 991px) {
   .technology-cards {
     display: flex;
@@ -12630,9 +12611,6 @@ body {
     flex-shrink: 0;
   }
 }
-/* =========================
-   Profile card
-========================= */
 .profile-card {
   padding: 0;
 }
@@ -12652,9 +12630,6 @@ body {
   transform: scale(1.08);
 }
 
-/* =========================
-   Components card
-========================= */
 .components-card {
   flex-direction: row;
   align-items: center;
@@ -12690,9 +12665,6 @@ body {
   color: #6c757d;
 }
 
-/* =========================
-   UI Kit card
-========================= */
 .ui-kit-card {
   align-items: center;
   justify-content: center;
@@ -12730,9 +12702,6 @@ body {
   transform: scale(1.08);
 }
 
-/* =========================
-   Review card
-========================= */
 .review-card {
   gap: 0.25rem;
 }
@@ -12866,9 +12835,6 @@ body {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
 }
 
-/* =========================
-   Awards section
-========================= */
 .awards-section {
   padding: 3rem 0;
 }
@@ -12878,9 +12844,6 @@ body {
     padding: 3.5rem 0;
   }
 }
-/* =========================
-   Slider base
-========================= */
 .awards-slider {
   position: relative;
   overflow: hidden;
@@ -12897,9 +12860,6 @@ body {
   animation-play-state: paused;
 }
 
-/* =========================
-   Title
-========================= */
 .awards-title {
   max-width: 620px;
   margin: 0 auto;
@@ -12911,9 +12871,6 @@ body {
   color: #1e7bff;
 }
 
-/* =========================
-   Award card
-========================= */
 .award-card {
   width: 260px;
   background: #fff;
@@ -12933,9 +12890,6 @@ body {
   box-shadow: 0 28px 60px rgba(0, 0, 0, 0.15);
 }
 
-/* =========================
-   Card content
-========================= */
 .award-logo {
   height: 32px;
   margin-bottom: 0.5rem;
@@ -12962,9 +12916,6 @@ body {
   text-decoration: underline;
 }
 
-/* =========================
-   Infinite animation
-========================= */
 @keyframes awards-scroll {
   0% {
     transform: translateX(0);
@@ -12973,9 +12924,6 @@ body {
     transform: translateX(-50%);
   }
 }
-/* =========================
-   Mobile scroll polish
-========================= */
 .awards-row::-webkit-scrollbar {
   height: 6px;
 }
@@ -13006,9 +12954,6 @@ body {
   background: linear-gradient(to left, #fff, transparent);
 }
 
-/* =========================
-   Questions section
-========================= */
 .questions-section {
   padding: 3rem 0;
 }
@@ -13018,9 +12963,6 @@ body {
     padding: 4rem 0;
   }
 }
-/* =========================
-   Titles
-========================= */
 .questions-title {
   font-size: 2rem;
   font-weight: 700;
@@ -13033,9 +12975,6 @@ body {
   margin: 0 auto;
 }
 
-/* =========================
-   Accordion styling
-========================= */
 .accordion {
   display: flex;
   flex-direction: column;
@@ -13063,14 +13002,12 @@ body {
   display: none;
 }
 
-/* Plus icon */
 .accordion-icon {
   margin-left: auto;
   font-size: 1.25rem;
   transition: transform 0.25s ease;
 }
 
-/* Active state */
 .accordion-button:not(.collapsed) {
   background-color: #1e7bff;
   color: #fff;
@@ -13079,25 +13016,18 @@ body {
   transform: rotate(45deg);
 }
 
-/* Body */
 .accordion-body {
   background-color: #fff;
   color: #6c757d;
   padding: 1.25rem 1.5rem;
 }
 
-/* =========================
-   CTA
-========================= */
 .questions-cta-text {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
 
-/* =========================
-   Footer
-========================= */
 .footer {
   background: linear-gradient(180deg, #0e1033, #0b0d26);
   color: rgba(255, 255, 255, 0.85);
@@ -13109,9 +13039,6 @@ body {
     padding: 3.5rem 0;
   }
 }
-/* =========================
-   CTA
-========================= */
 .footer-cta-title {
   font-size: 1.4rem;
   font-weight: 600;
@@ -13123,34 +13050,34 @@ body {
   margin-bottom: 0;
 }
 
-/* =========================
-   Divider
-========================= */
 .footer-divider {
   border-color: rgba(255, 255, 255, 0.1);
 }
 
-/* =========================
-   Brand
-========================= */
 .footer-text {
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.6);
   max-width: 360px;
 }
 
-.footer-social a {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 1.1rem;
-  transition: color 0.2s ease;
+.footer-social .social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-.footer-social a:hover {
-  color: #fff;
+.footer-social .social-link img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.65;
+  transition: opacity 0.2s ease;
+}
+.footer-social .social-link:hover {
+  transform: translateY(-2px);
+}
+.footer-social .social-link:hover img {
+  opacity: 1;
 }
 
-/* =========================
-   Links
-========================= */
 .footer-heading {
   font-size: 0.8rem;
   font-weight: 600;
@@ -13175,9 +13102,6 @@ body {
   color: #fff;
 }
 
-/* =========================
-   Bottom bar
-========================= */
 .footer-bottom small, .footer-bottom .small {
   font-size: 0.75rem;
   opacity: 0.6;

@@ -1,6 +1,4 @@
-/* =========================
-   Technology section
-========================= */
+//Technology section
 
 .technology-section {
   padding: map-get($section-spacing, technology-desktop) 0;
@@ -13,9 +11,7 @@
   }
 }
 
-/* =========================
-   Text content
-========================= */
+//Text content
 
 .technology-badge {
   display: inline-block;
@@ -60,9 +56,7 @@
   }
 }
 
-/* =========================
-   Cards – BASE
-========================= */
+//Cards base
 
 .tech-card {
   background: #fff;
@@ -75,9 +69,7 @@
   text-align: center;
 }
 
-/* =========================
-   Desktop layout
-========================= */
+//Desktop layout
 
 @media (min-width: 992px) {
   .technology-section .row {
@@ -115,9 +107,7 @@
   }
 }
 
-/* =========================
-   Mobile layout (horizontal scroll)
-========================= */
+//Mobile layout horizontal scroll
 
 @media (max-width: 991px) {
   .technology-cards {
@@ -137,9 +127,7 @@
   }
 }
 
-/* =========================
-   Profile card
-========================= */
+//Profile card Jimmy
 
 .profile-card {
   padding: 0;
@@ -161,9 +149,7 @@
   }
 }
 
-/* =========================
-   Components card
-========================= */
+//Components card
 
 .components-card {
   flex-direction: row;
@@ -176,6 +162,7 @@
     transform: scale(1.08);
   }
 
+  //palomita
   .check-icon {
     width: 32px;
     height: 32px;
@@ -205,9 +192,7 @@
   }
 }
 
-/* =========================
-   UI Kit card
-========================= */
+//UI Kit card
 
 .ui-kit-card {
   align-items: center;
@@ -249,9 +234,7 @@
   }
 }
 
-/* =========================
-   Review card
-========================= */
+//Review card
 
 .review-card {
   gap: 0.25rem;

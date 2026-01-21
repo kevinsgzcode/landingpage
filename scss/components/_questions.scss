@@ -1,6 +1,4 @@
-/* =========================
-   Questions section
-========================= */
+//Questions section
 
 .questions-section {
   padding: map-get($section-spacing, questions-desktop) 0;
@@ -12,9 +10,7 @@
   }
 }
 
-/* =========================
-   Titles
-========================= */
+//Questions Titles
 
 .questions-title {
   font-size: 2rem;
@@ -28,9 +24,7 @@
   margin: 0 auto;
 }
 
-/* =========================
-   Accordion styling
-========================= */
+//Accordion styling
 
 .accordion {
   display: flex;
@@ -61,14 +55,14 @@
   }
 }
 
-/* Plus icon */
+// Plus icon
 .accordion-icon {
   margin-left: auto;
   font-size: 1.25rem;
   transition: transform 0.25s ease;
 }
 
-/* Active state */
+//Rotate icon
 .accordion-button:not(.collapsed) {
   background-color: $primary;
   color: #fff;
@@ -78,16 +72,14 @@
   }
 }
 
-/* Body */
+// Body
 .accordion-body {
   background-color: #fff;
   color: $gray-600;
   padding: 1.25rem 1.5rem;
 }
 
-/* =========================
-   CTA
-========================= */
+//CTA
 
 .questions-cta-text {
   font-size: 1.5rem;

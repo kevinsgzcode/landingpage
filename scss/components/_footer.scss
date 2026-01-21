@@ -1,6 +1,4 @@
-/* =========================
-   Footer
-========================= */
+//Footer
 
 .footer {
   background: linear-gradient(180deg, #0e1033, #0b0d26);
@@ -14,9 +12,7 @@
   }
 }
 
-/* =========================
-   CTA
-========================= */
+//CTA
 
 .footer-cta-title {
   font-size: 1.4rem;
@@ -29,17 +25,13 @@
   margin-bottom: 0;
 }
 
-/* =========================
-   Divider
-========================= */
+//Divider
 
 .footer-divider {
   border-color: rgba(255, 255, 255, 0.1);
 }
 
-/* =========================
-   Brand
-========================= */
+//Brand
 
 .footer-text {
   font-size: 0.85rem;
@@ -47,19 +39,31 @@
   max-width: 360px;
 }
 
-.footer-social a {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 1.1rem;
-  transition: color 0.2s ease;
+//footer logos
+.footer-social {
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-  &:hover {
-    color: #fff;
+    img {
+      width: 20px;
+      height: 20px;
+      opacity: 0.65;
+      transition: opacity 0.2s ease;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+
+      img {
+        opacity: 1;
+      }
+    }
   }
 }
 
-/* =========================
-   Links
-========================= */
+//Links
 
 .footer-heading {
   font-size: 0.8rem;
@@ -88,9 +92,7 @@
   }
 }
 
-/* =========================
-   Bottom bar
-========================= */
+//Bottom bar
 
 .footer-bottom small {
   font-size: 0.75rem;
