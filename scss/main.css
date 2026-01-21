@@ -12554,107 +12554,141 @@ body {
 }
 
 /* =========================
-   Cards layout (EDITORIAL)
-========================= */
-.technology-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.75rem;
-  align-items: stretch;
-}
-
-/* =========================
-   Left column Jimmy + 300
-========================= */
-.left-column {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-/* =========================
-   Base card
+   Cards – BASE
 ========================= */
 .tech-card {
   background: #fff;
   border-radius: 1rem;
-  padding: 1.25rem;
-  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12);
-  font-size: 0.8rem;
-  width: 100%;
-  min-height: 120px;
+  padding: 1rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
+/* =========================
+   Desktop layout
+========================= */
+@media (min-width: 992px) {
+  .technology-section .row {
+    align-items: center;
+  }
+  .technology-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    -moz-column-gap: 1.75rem;
+         column-gap: 1.75rem;
+    row-gap: 1.5rem;
+  }
+  .left-column {
+    grid-column: 1;
+    grid-row: 1/span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .profile-card,
+  .components-card {
+    width: 260px;
+  }
+  .ui-kit-card {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .review-card {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+/* =========================
+   Mobile layout (horizontal scroll)
+========================= */
+@media (max-width: 991px) {
+  .technology-cards {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+  .tech-column {
+    display: contents;
+  }
+  .tech-card {
+    min-width: 240px;
+    flex-shrink: 0;
+  }
+}
 /* =========================
    Profile card
 ========================= */
 .profile-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  text-align: center;
+  padding: 0;
 }
 .profile-card img {
-  width: 64px;
-  height: 64px;
+  width: 100%;
+  height: 160px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+  display: block;
 }
 .profile-card .name {
+  padding: 0.75rem;
   font-weight: 600;
 }
 
 /* =========================
-   Components card (same width)
+   Components card
 ========================= */
 .components-card {
-  display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
   gap: 0.75rem;
-  background-color: #f8f9fa;
+  text-align: left;
 }
 .components-card .check-icon {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #198754;
+  background: #1f8f55;
   color: #fff;
-  font-size: 0.9rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 700;
   flex-shrink: 0;
 }
+.components-card .components-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
 .components-card .components-text strong {
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.95rem;
 }
 .components-card .components-text span {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: #6c757d;
 }
 
 /* =========================
-   UI Kit card (center)
+   UI Kit card
 ========================= */
 .ui-kit-card {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
   text-align: center;
-  min-height: 120px;
-  transform: translateY(-50px);
+  gap: 0.5rem;
 }
 .ui-kit-card .ui-kit-logo {
-  height: 28px;
-  margin-bottom: 0.25rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .ui-kit-card .ui-kit-title {
   font-weight: 600;
@@ -12678,10 +12712,9 @@ body {
 }
 
 /* =========================
-   Review card (right)
+   Review card
 ========================= */
 .review-card {
-  text-align: center;
   gap: 0.25rem;
 }
 .review-card .rating {
@@ -12694,20 +12727,6 @@ body {
   font-size: 0.7rem;
 }
 
-/* =========================
-   Mobile fallback
-========================= */
-@media (max-width: 991px) {
-  .technology-cards {
-    grid-template-columns: 1fr;
-  }
-  .left-column {
-    align-items: center;
-  }
-  .tech-card {
-    width: 100%;
-  }
-}
 .download-cta {
   background-color: #1e7bff;
   color: #fff;
