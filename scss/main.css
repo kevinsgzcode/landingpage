@@ -11979,6 +11979,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  padding-top: 72px;
+}
+
 .navbar {
   background-color: #fff;
 }
