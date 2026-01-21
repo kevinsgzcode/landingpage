@@ -21,11 +21,14 @@
   }
 }
 
-.download-eyebrow {
+.download-badge {
   font-size: 0.75rem;
+  background-color: $white;
+  color: $primary;
+  font-size: 0.7rem;
   font-weight: 600;
-  opacity: 0.9;
-  margin-bottom: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
 }
 
 .download-title {
@@ -76,12 +79,13 @@
 
 .download-media {
   position: relative;
-  margin-top: 2.5rem;
-  border-radius: 1.25rem;
+  margin-top: 0.5rem;
+  border-radius: 1rem;
   overflow: hidden;
-  max-width: 720px;
+  max-width: 380px;
   width: 100%;
   cursor: pointer;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 
   img {
     width: 100%;

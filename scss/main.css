@@ -12552,6 +12552,10 @@ body {
   color: #1e7bff;
   text-decoration: none;
 }
+.technology-link:hover {
+  text-decoration: underline;
+  transform: scale(1.08);
+}
 
 /* =========================
    Cards – BASE
@@ -12638,6 +12642,9 @@ body {
   padding: 0.75rem;
   font-weight: 600;
 }
+.profile-card:hover {
+  transform: scale(1.08);
+}
 
 /* =========================
    Components card
@@ -12648,6 +12655,9 @@ body {
   justify-content: flex-start;
   gap: 0.75rem;
   text-align: left;
+}
+.components-card:hover {
+  transform: scale(1.08);
 }
 .components-card .check-icon {
   width: 32px;
@@ -12710,6 +12720,9 @@ body {
 .ui-kit-card .ui-kit-avatars img:first-child {
   margin-left: 0;
 }
+.ui-kit-card:hover {
+  transform: scale(1.08);
+}
 
 /* =========================
    Review card
@@ -12725,6 +12738,9 @@ body {
 .review-card small, .review-card .small {
   color: #adb5bd;
   font-size: 0.7rem;
+}
+.review-card:hover {
+  transform: scale(1.08);
 }
 
 .download-cta {
@@ -12748,11 +12764,14 @@ body {
     padding: 4rem 1.25rem;
   }
 }
-.download-eyebrow {
+.download-badge {
   font-size: 0.75rem;
+  background-color: #fff;
+  color: #1e7bff;
+  font-size: 0.7rem;
   font-weight: 600;
-  opacity: 0.9;
-  margin-bottom: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
 }
 
 .download-title {
@@ -12803,12 +12822,13 @@ body {
 
 .download-media {
   position: relative;
-  margin-top: 2.5rem;
-  border-radius: 1.25rem;
+  margin-top: 0.5rem;
+  border-radius: 1rem;
   overflow: hidden;
-  max-width: 720px;
+  max-width: 380px;
   width: 100%;
   cursor: pointer;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 .download-media img {
   width: 100%;
